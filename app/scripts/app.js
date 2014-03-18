@@ -8,6 +8,10 @@ App.config(function ($routeProvider) {
       templateUrl: 'views/main.html',
       controller: 'MainCtrl'
     })
+    .when('/categories', {
+      templateUrl: 'views/categories.html',
+      controller: 'CategoryCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
