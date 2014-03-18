@@ -1,6 +1,10 @@
 <h1>Categories</h1>
 
 <div ng-controller="CategoryCtrl">
+  <hr class="table-spacer"/>
+  <div class="form-group">
+    <input type="text" class="form-control" id="inputDefault" placeholder="Search" ng-model="searchText">
+  </div>
   <table class="categories-table table table-striped table-hover">
     <caption>
       Categories
@@ -14,7 +18,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="category in categories">
+      <tr ng-repeat="category in categories | filter:searchText">
         <td>{{category.id}}</td>
         <td>{{category.category_name}}</td>
         <td>{{category.description}}</td>
