@@ -5867,6 +5867,10 @@ legend {
   background-image: none;
 }
 
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #ad1d28;
+}
+
 /* ANGULAR STYLES */
 
 .customers-table, .categories-table, .employees-table, .order-details-table, .orders-table, .products-table, .shippers-table, .suppliers-table {
