@@ -5871,6 +5871,10 @@ legend {
   background-color: #ad1d28;
 }
 
+.glyphicon-remove {
+  cursor: pointer;
+}
+
 /* ANGULAR STYLES */
 
 hr.table-spacer {

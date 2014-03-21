@@ -10,5 +10,10 @@ App.controller('CategoryCtrl', ['$scope', 'Category',
       $scope.categories.push($scope.category);
       $scope.category = new Category();
     }
+
+    $scope.delete = function(category){
+      Category.delete(category);
+      _.remove($scope.categories, category);
+    }
   }
 ]);

@@ -12,6 +12,7 @@
         <th scope="col">Category Name</th>
         <th scope="col">Description</th>
         <th scope="col">Picture</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
         <td>{{category.category_name}}</td>
         <td>{{category.description}}</td>
         <td>{{category.picture}}</td>
+        <td ng-click="delete(category)"><span class="glyphicon glyphicon-remove"></td>
       </tr>
     </tbody>
   </table>
