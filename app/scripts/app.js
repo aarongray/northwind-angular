@@ -9,7 +9,11 @@ App.config(function ($routeProvider) {
       controller: 'MainCtrl'
     })
     .when('/categories', {
-      templateUrl: 'views/categories.html',
+      templateUrl: 'views/categories/index.html',
+      controller: 'CategoryCtrl'
+    })
+    .when('/categories/new', {
+      templateUrl: 'views/categories/new.html',
       controller: 'CategoryCtrl'
     })
     .otherwise({

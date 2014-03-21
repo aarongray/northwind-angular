@@ -1,0 +1,32 @@
+<div ng-controller="CategoryCtrl">
+  <h1>New Category</h1>
+  <hr class="table-spacer"/>
+  <form ng-submit="save(category)" class="form-horizontal">
+    <fieldset>
+      <div class="form-group">
+        <label class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-8">
+            <input ng-model="category.category_name" type="text" class="form-control" id="categoryName">
+          </div>
+      </div>
+      <div class="form-group">
+        <label class="col-lg-2 control-label">Description</label>
+          <div class="col-lg-8">
+            <textarea ng-model="category.description" class="form-control" rows="3" id="categoryDescription"></textarea>
+          </div>
+      </div>
+      <div class="form-group">
+        <label class="col-lg-2 control-label">Picture</label>
+          <div class="col-lg-8">
+            <input ng-model="category.picture" type="text" class="form-control" id="categoryPicture">
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <button class="btn btn-default">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
