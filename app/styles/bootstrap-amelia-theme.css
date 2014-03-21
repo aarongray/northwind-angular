@@ -5873,10 +5873,6 @@ legend {
 
 /* ANGULAR STYLES */
 
-.customers-table, .categories-table, .employees-table, .order-details-table, .orders-table, .products-table, .shippers-table, .suppliers-table {
-  margin-top: 80px;
-}
-
 hr.table-spacer {
   border-top: 10px dotted #000;
   height: 0px;
