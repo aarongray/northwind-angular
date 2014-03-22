@@ -1,6 +1,6 @@
 'use strict';
 
-var App = angular.module('northwindApp', ['ngResource', 'ngRoute']);
+var App = angular.module('northwindApp', ['restangular', 'ngRoute']);
 
 App.config(function ($routeProvider) {
   $routeProvider
