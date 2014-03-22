@@ -2,18 +2,18 @@
 
 App.controller('CategoryCtrl', ['$scope', 'Category',
   function ($scope, Category) {
-    $scope.category = new Category();
-    $scope.categories = Category.query();
+    $scope.category = new Category();           // create a new category in our $scope for use in the view
+    $scope.categories = Category.query();       // assign all the categories to our $scope for use in the view
 
     $scope.save = function() {
-      $scope.category.$save();
-      $scope.categories.push($scope.category);
+      $scope.category.$save();                  // save the category to the database on the server side
+      $scope.categories.push($scope.category);  // add the category to the array on the client side
       $scope.category = new Category();
     }
 
     $scope.delete = function(category){
-      Category.delete(category);
-      _.remove($scope.categories, category);
+      Category.delete(category);                // delete the category from the database on the server side
+      _.remove($scope.categories, category);    // delete the category from the array on the client side
     }
   }
 ]);
