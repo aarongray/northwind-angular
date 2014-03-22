@@ -30,16 +30,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">Northwind Rails</a>
+        <a ui-sref="home" class="navbar-brand">Northwind Rails</a>
       </div>
       <div class="navbar-collapse navbar-responsive-collapse collapse in" style="height: auto;">
         <ul class="nav navbar-nav">
-          <li><a href="#/categories">Categories</a></li>
+          <li><a ui-sref="categories">Categories</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="container" ng-view=""></div>
+    <div class="container" ui-view></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -58,7 +58,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
