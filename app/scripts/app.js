@@ -17,6 +17,7 @@ App.config(function ($routeProvider) {
       controller: 'CategoryCtrl'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/404',
+      templateUrl: '404.html'
     });
 });
